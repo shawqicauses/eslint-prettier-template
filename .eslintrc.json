@@ -1,0 +1,22 @@
+{
+  "extends": ["airbnb", "airbnb/hooks", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "arrow-body-style": "off",
+    "class-methods-use-this": "off",
+    "consistent-return": "off",
+    "func-name-matching": "error",
+    "func-names": "error",
+    "func-style": "error",
+    "no-console": "error",
+    "no-empty-function": "error",
+    "no-param-reassign": "error",
+    "no-return-await": "error",
+    "no-unused-vars": ["error", {"argsIgnorePattern": "request|response"}],
+    "no-underscore-dangle": "error",
+    "object-shorthand": "off",
+    "prefer-arrow-callback": "off",
+    "prefer-destructuring": "error"
+  }
+}
