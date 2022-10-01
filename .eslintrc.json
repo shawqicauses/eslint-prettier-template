@@ -1,5 +1,7 @@
 {
-  "extends": ["airbnb", "airbnb/hooks", "plugin:prettier/recommended"],
+  // "extends": ["next/core-web-vitals", "airbnb", "airbnb/hooks", "plugin:prettier/recommended"], // Next.JS Application
+  // "extends": ["react-app", "airbnb", "airbnb/hooks", "plugin:prettier/recommended"], // React.JS Application
+  "extends": ["airbnb", "airbnb/hooks", "plugin:prettier/recommended"], // Default JavaScript
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error",
@@ -17,6 +19,10 @@
     "no-underscore-dangle": "error",
     "object-shorthand": "off",
     "prefer-arrow-callback": "off",
-    "prefer-destructuring": "error"
+    "prefer-destructuring": "error",
+    "import/extensions": ["error", {"ts": "never", "tsx": "never"}],
+    "react/jsx-filename-extension": ["error", {"extensions": [".ts", ".tsx"]}],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off"
   }
 }
