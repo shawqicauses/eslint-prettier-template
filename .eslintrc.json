@@ -14,15 +14,28 @@
     "no-console": "error",
     "no-empty-function": "error",
     "no-param-reassign": "error",
-    "no-return-await": "error",
-    "no-unused-vars": ["error", {"argsIgnorePattern": "request|response"}],
+    "no-return-await": "off",
+    "no-undef": "off",
     "no-underscore-dangle": "error",
+    "no-unsafe-negation": "error",
+    "no-unused-vars": ["error", {"argsIgnorePattern": "request|response|next"}],
     "object-shorthand": "off",
     "prefer-arrow-callback": "off",
     "prefer-destructuring": "error",
     "import/extensions": ["error", {"ts": "never", "tsx": "never"}],
     "react/jsx-filename-extension": ["error", {"extensions": [".ts", ".tsx"]}],
     "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {"required": {"some": ["nesting", "id"]}}
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {"required": {"some": ["nesting", "id"]}}
+    ]
+  },
+  "settings": {
+    "import/resolver": {"node": {"extensions": [".ts", ".tsx"]}}
   }
 }
